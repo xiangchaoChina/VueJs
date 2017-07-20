@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+
+<body>
+    <div id="app">
+        {{message}}
+        <span v-bind:title="title">
+            悬停几秒查看效果
+        </span>
+    </div>
+</body>
+<script src="js/vue.js"></script>
+<script>
+    var app = new Vue({
+        el:"#app",
+        data:{
+            message:'Hello Vue!',
+            title:"页面加载于"+new Date()
+        }
+    })
+
+</script>
+</html>
